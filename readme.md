@@ -1,70 +1,56 @@
-[//]: # (# Weather App)
+# Prompt Sense
 
-[//]: # ()
-[//]: # (The Weather App is a command-line application that allows users to get weather information for a specific city. It provides real-time weather data such as temperature, humidity, and wind speed.)
 
-[//]: # ()
-[//]: # (## Features)
+Prompt Sense is a Node.js package that provides an interactive command-line interface with real-time suggestions. It allows you to prompt the user for input while providing autocomplete suggestions based on the options you provide.
 
-[//]: # ()
-[//]: # (- **City Suggestion**: The app provides city suggestions as the user types, making it easier to select the desired city.)
 
-[//]: # (- **Multiple City Support**: Users can add and save multiple cities to check the weather for each of them.)
+## Technologies Used
 
-[//]: # (- **Weather Information**: The app fetches weather data from the OpenWeatherMap API, displaying details like temperature, feels like temperature, humidity, and wind speed.)
 
-[//]: # ()
-[//]: # (## Technologies Used)
+- JavaScript
 
-[//]: # ()
-[//]: # (- JavaScript)
+- Node.js
+- npm packages:
 
-[//]: # (- Node.js)
+    - `readline` for handling user input in the command line
 
-[//]: # (- npm packages:)
+    - `keypress` for capturing keypress events
 
-[//]: # (    - `axios` for making HTTP requests to the OpenWeatherMap API)
 
-[//]: # (    - `readline` for handling user input in the command line)
+## Installation
 
-[//]: # (    - `keypress` for capturing keypress events)
+You can install the Prompt Sense package via npm. Open your terminal and run the following command:
+```shell
+  npm install prompt-sense
+```
 
-[//]: # (    - `colors` for adding colors to the console output)
+## Usage
 
-[//]: # (    - `fs` for reading and writing data to a file)
+- Import the package into your project: 
+``` javascript
+const promptSense = require('smart-cli');
+```
+- Invoke the promptSense function, passing the required parameters: prompt, suggestions, and numberOfSuggestions.
+  - prompt (String): The prompt to be displayed to the user. 
+  - suggestions (Array of Strings): An array of options that will be used for real-time suggestions. 
+  - numberOfSuggestions (Number): The maximum number of suggestions to be displayed.
+```javascript
+// Using async/await:
+    const response = await promptSense('Enter your favorite programming language: ', ['JavaScript', 'Python', 'Java', 'C++'], 3);
+    console.log('You entered:', response);
+    
+// Using promises:
+promptSense('Enter your favorite programming language: ', ['JavaScript', 'Python', 'Java', 'C++'], 3)
+  .then((response) => {
+    console.log('You entered:', response);
+  })
+  .catch((error) => {
+    console.error('An error occurred:', error);
+  });
+```
 
-[//]: # ()
-[//]: # (## Getting Started)
+When running the above code, the user will see the prompt "Enter your favorite programming language: " and can start typing their input. As they type, the CLI will provide real-time suggestions based on the options array. The user can select an option from the suggestions or provide their own input.
 
-[//]: # ()
-[//]: # (1. Clone the repository:)
 
-[//]: # ()
-[//]: # (   ```bash)
 
-[//]: # (   https://github.com/Harisabdullah/CLI-weather.git)
 
-[//]: # (2. Install dependencies:)
-
-[//]: # ()
-[//]: # (   ```bash)
-
-[//]: # (   cd CLI-weather)
-
-[//]: # (   npm install)
-
-[//]: # ()
-[//]: # (## Usage)
-
-[//]: # ()
-[//]: # (- Run the application and follow the prompts to perform the desired actions:)
-
-[//]: # (  - Enter a city name to get the weather information for that city.)
-
-[//]: # (  - Add new cities to your saved cities list.)
-
-[//]: # (  - Delete cities from your saved cities list.)
-
-[//]: # (  - See the weather information for all the saved cities.)
-
-[//]: # (  - Quit the application.)

@@ -1,1 +1,5 @@
-export * from './prompt-sense';
+const promptSense = require('./prompt-sense');
+
+module.exports = {
+  promptSense,
+}
