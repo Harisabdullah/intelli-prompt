@@ -1,12 +1,14 @@
 {
-  "name": "autocomplete-prompt",
+  "name": "intelli-prompt",
   "version": "1.0.0",
   "dependencies": {
     "keypress": "^0.2.1"
   },
   "keywords": [
-    "autocomplete-prompt",
-    "autocomplete-prompt.js",
+    "intelli-prompt",
+    "intelli-prompt.js",
+    "intelli",
+    "intelligent",
     "npm",
     "autocomplete",
     "prompt",

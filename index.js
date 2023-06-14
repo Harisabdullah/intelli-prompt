@@ -1,5 +1,5 @@
-const autocompletePrompt = require('./prompt-sense');
+const intelliPrompt = require('./prompt-sense');
 
 module.exports = {
-  autocompletePrompt,
+  intelliPrompt,
 }
