@@ -1,15 +1,15 @@
 {
-  "name": "prompt-sense",
+  "name": "autocomplete-prompt",
   "version": "1.0.0",
   "dependencies": {
     "keypress": "^0.2.1"
   },
   "keywords": [
-    "prompt-sense",
-    "prompt-sense.js",
+    "autocomplete-prompt",
+    "autocomplete-prompt.js",
     "npm",
+    "autocomplete",
     "prompt",
-    "sense",
     "cli",
     "command",
     "line",

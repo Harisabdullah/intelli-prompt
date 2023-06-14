@@ -1,7 +1,7 @@
-# Prompt Sense
+# Autocomplete Prompt
 
 
-Prompt Sense is a Node.js package that provides an interactive command-line interface with real-time suggestions. It allows you to prompt the user for input while providing autocomplete suggestions based on the options you provide.
+Autocomplete Prompt is a Node.js package that provides an interactive command-line interface with real-time suggestions. It allows you to prompt the user for input while providing autocomplete suggestions based on the options you provide.
 
 
 ## Technologies Used
@@ -19,16 +19,16 @@ Prompt Sense is a Node.js package that provides an interactive command-line inte
 
 ## Installation
 
-You can install the Prompt Sense package via npm. Open your terminal and run the following command:
+You can install the Autocomplete Prompt package via npm. Open your terminal and run the following command:
 ```shell
-  npm install prompt-sense
+  npm install autocomplete-prompt
 ```
 
 ## Usage
 
 - Import the package into your project: 
 ``` javascript
-const promptSense = require('smart-cli');
+const autocompletePrompt = require('autocomplete-prompt');
 ```
 - Invoke the promptSense function, passing the required parameters: prompt, suggestions, and numberOfSuggestions.
   - prompt (String): The prompt to be displayed to the user. 
@@ -36,11 +36,11 @@ const promptSense = require('smart-cli');
   - numberOfSuggestions (Number): The maximum number of suggestions to be displayed.
 ```javascript
 // Using async/await:
-    const response = await promptSense('Enter your favorite programming language: ', ['JavaScript', 'Python', 'Java', 'C++'], 3);
+    const response = await autocompletePrompt('Enter your favorite programming language: ', ['JavaScript', 'Python', 'Java', 'C++'], 3);
     console.log('You entered:', response);
     
 // Using promises:
-promptSense('Enter your favorite programming language: ', ['JavaScript', 'Python', 'Java', 'C++'], 3)
+autocompletePrompt('Enter your favorite programming language: ', ['JavaScript', 'Python', 'Java', 'C++'], 3)
   .then((response) => {
     console.log('You entered:', response);
   })
