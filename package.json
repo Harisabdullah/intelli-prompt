@@ -1,7 +1,18 @@
 {
   "name": "prompt-sense",
-  "version": "2.0.0",
+  "version": "1.0.0",
   "dependencies": {
     "keypress": "^0.2.1"
-  }
+  },
+  "keywords": [
+    "prompt-sense",
+    "prompt-sense.js",
+    "npm",
+    "prompt",
+    "sense",
+    "cli",
+    "command",
+    "line",
+    "interface"
+  ]
 }
